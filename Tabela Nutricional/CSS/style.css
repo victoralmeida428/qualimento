@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+:root{
+    --font-family: 'Satisfy', sans-serif;
+    --bg-color: #1a2d3b;
+
+    --prymary-color: white;
+
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+header {
+    font-family: var(--font-family);
+    color: var(--prymary-color);
+    font-size: 50px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.cadastro {
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    margin: 2em 2em;
+    padding: 2em 5em;
+}
+
+.caixa_input{
+    border: 1px solid rgb(108, 144, 185);
+    color: black;
+}
+
+#btn_cadastrar {
+    cursor: pointer;
+}

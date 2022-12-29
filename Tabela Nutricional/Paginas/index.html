@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qualimento</title>
+    <link rel="stylesheet" href="..\CSS\reset.css">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/png" sizes="">
+    <link rel="stylesheet" href="..\CSS\style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Qualimento</h1>
+    </header>
+    <div class="principal">
+        <form action class="cadastro">
+            <label for="item-cadastro">Ingrediente</label>
+            <input class="caixa_input" type="text" name="Ingrediente" id="ingrediente" value="Pernil" required>
+            <label for="item-cadastro">Quantidade (%) </label>
+            <input class="caixa_input" type="number" name="qtd" id="porcentagem" value="90" required>
+            <label for="item-cadastro">Valor Energético (kCal)</label>
+            <input class="caixa_input" type="number" name="energia" id="kcal" value="100">
+            <label for="item-cadastro">Carboidratos Totais (g)</label>
+            <input class="caixa_input" type="number" name="carboidratos" id="carboidratos" value="18">
+            <label for="item-cadastro">Açúcares Totais (g)</label>
+            <input class="caixa_input" type="number" name="acucarTotal" id="acucarTotal" value="40">
+            <label for="item-cadastro">Açúcares Adicionados (g)</label>
+            <input class="caixa_input" type="number" name="acucarAdd" id="acucarAdd" value="0">
+            <label for="item-cadastro">Proteínas (g)</label>
+            <input class="caixa_input" type="number" name="proteina" id="proteina" value="180">
+            <label for="item-cadastro">Gorduras Totais (g)</label>
+            <input class="caixa_input" type="number" name="gorduraTotal" id="gorduraTota" value="5">
+            <label for="item-cadastro">Gorduras Saturadas (g)</label>
+            <input class="caixa_input" type="number" name="gorduraSat" id="gorduraSat" value="60">
+            <label for="item-cadastro">Gorduras Trans (g)</label>
+            <input class="caixa_input" type="number" name="gorduraTrans" id="gorduraTrans" value="0">
+            <label for="item-cadastro">Fibras Alimentares (g)</label>
+            <input class="caixa_input" type="number" name="fibras" id="fibras" value="10">
+            <label for="item-cadastro">Fibras Soluveis (g)</label>
+            <input class="caixa_input" type="number" name="fibrasSoluveis" id="fibrasSoluveis" value="1">
+            <label for="item-cadastro">Sódio (mg)</label>
+            <input class="caixa_input" type="number" name="sodio" id="sodio" value="200">
+            <label for="item-cadastro">Ácidos Orgânicos</label>
+            <input class="caixa_input" type="number" name="acidosOrganicos" id="acidosOrganicos" value="0">
+            <input class="caixa_input" type="button" value="Cadastrar" id="btn_cadastrar">
+            
+        </form>
+
+    </div>
+    <script src="../App/main.js"></script>    
+</body>
+</html>
