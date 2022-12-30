@@ -1,5 +1,10 @@
-const cadastro = document.querySelector('.cadastro');
-var teste = []
-function enviarDados(){
-    return console.log('Olá mundo');
+const btnMenu = document.querySelector('.btnMenu');
+const menu = document.querySelector('.menu-inicial');
+
+function handleButtonClick (event) {
+    event.preventDefault();
+    menu.classList.toggle('active');
+
 }
+
+btnMenu.addEventListener("click", handleButtonClick);
