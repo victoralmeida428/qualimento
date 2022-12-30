@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+:root{
+    --font-family: 'Satisfy', sans-serif;
+    --bg-color: #1a2d3b;
+
+    --prymary-color: white;
+
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+header {
+    font-family: var(--font-family);
+    color: var(--prymary-color);
+    font-size: 50px;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 1px;
+}
+
+.menu ul li{
+    font-size: 15px;
+    display: inline-block;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+.cadastro {
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    margin: 1em 1em;
+    padding: 0.5em 2em;
+
+}
+
+.caixa_input{
+    border: 1px solid rgb(108, 144, 185);
+    color: black;
+    margin-bottom: 1em;
+}
+
+#btn_cadastrar {
+    cursor: pointer;
+    padding: 2px 0;
+    font-weight: bold;
+    transition: 400ms;
+    border-radius: 30px;
+    margin: 0px 6em;
+    
+}
+
+#btn_cadastrar:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: linear-gradient(#1A2D3B, #5F9EA0);
+    /*background: #5F9EA0;*/
+    text-align: center;
+    padding: 40px 0;
+}
+.copyright {
+    color: #1A2D3B;
+    font-size: 10px;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+}
+
+footer p {
+    font-style: italic;
+    color: white;
+}
