@@ -28,7 +28,7 @@ body {
 }
 
 .nome {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
 
 }
@@ -178,6 +178,8 @@ footer p {
 
     .btnMenu {
         display: flex;
-        align-items: flex-end;
+        align-self: center;
+        width: 10vw;
+        
     }
 }
