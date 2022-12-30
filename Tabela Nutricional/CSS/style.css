@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+:root{
+    --font-family: 'Satisfy', sans-serif;
+    --bg-color: #1a2d3b;
+
+    --prymary-color: white;
+
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+header {
+    font-family: var(--font-family);
+    color: var(--prymary-color);
+    font-size: 5em;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 1px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 1em;
+}
+
+p {
+    font-size: medium;
+    font-family: sans-serif;
+    text-align: justify;
+    margin: 0 10%;
+    line-height: 1.5em;
+    text-indent: 2em;
+}
+
+.menu ul li{
+    font-size: 25px;
+    display: inline-block;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+.principal {
+    text-align: center;
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: 7em auto 7em auto;
+    color: aliceblue;
+    align-items: center;
+    text-align: right;
+    row-gap: 1em;
+    width: auto;
+    column-gap: 1em;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+
+.botao {
+    text-align: center;
+}
+label {
+    padding-bottom: 5px;
+    margin-right: 2px;
+}
+
+.caixa_input{
+    border: 1px solid rgb(108, 144, 185);
+    color: black;
+}
+
+#btn_cadastrar {
+    cursor: pointer;
+    padding: 10px 50px;
+    font-weight: bold;
+    transition: 400ms;
+    border-radius: 30px;
+    margin-bottom: 5em;
+    margin-top: 2em;
+
+    
+}
+
+#btn_cadastrar:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: linear-gradient(#1A2D3B, #5F9EA0);
+    /*background: #5F9EA0;*/
+    text-align: center;
+    padding: 40px 0;
+}
+.copyright {
+    color: #1A2D3B;
+    font-size: 10px;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+}
+
+footer p {
+    font-style: italic;
+    color: white;
+    text-align: center;
+}
+
+#nutricional {
+    width: 100%;
+
+
+}
