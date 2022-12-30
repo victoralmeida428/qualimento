@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qualimento</title>
+    <link rel="stylesheet" href="..\CSS\reset.css">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/png" sizes="">
+    <link rel="stylesheet" href="..\CSS\style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Qualimento</h1>
+        <div class="menu">
+            <ul class="menu-inicial">
+                <li class="navmenu"><a href="home.html">Home</a></li>
+                <li class="navmenu"><a href="cadastro.html">Cadastro</a></li>
+                <li class="navmenu"><a href="tabela.html">Informação Nutricional</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="principal">
+        <form action="../App/main.js" class="cadastro" method="post">
+            <div class="formulario">
+                <label for="item-cadastro">Ingrediente</label>
+                <input class="caixa_input" type="text" name="Ingrediente" id="ingrediente" placeholder="Pernil" required>
+                <label for="item-cadastro">Quantidade (%) </label>
+                <input class="caixa_input" type="number" name="qtd" id="porcentagem" placeholder="90" required>
+                <label for="item-cadastro">Valor Energético (kCal)</label>
+                <input class="caixa_input" type="number" name="energia" id="kcal" placeholder="100">
+                <label for="item-cadastro">Carboidratos Totais (g)</label>
+                <input class="caixa_input" type="number" name="carboidratos" id="carboidratos" placeholder="18">
+                <label for="item-cadastro">Açúcares Totais (g)</label>
+                <input class="caixa_input" type="number" name="acucarTotal" id="acucarTotal" placeholder="40">
+                <label for="item-cadastro">Açúcares Adicionados (g)</label>
+                <input class="caixa_input" type="number" name="acucarAdd" id="acucarAdd" placeholder="0">
+                <label for="item-cadastro">Proteínas (g)</label>
+                <input class="caixa_input" type="number" name="proteina" id="proteina" placeholder="180">
+                <label for="item-cadastro">Gorduras Totais (g)</label>
+                <input class="caixa_input" type="number" name="gorduraTotal" id="gorduraTota" placeholder="5">
+                <label for="item-cadastro">Gorduras Saturadas (g)</label>
+                <input class="caixa_input" type="number" name="gorduraSat" id="gorduraSat" placeholder="60">
+                <label for="item-cadastro">Gorduras Trans (g)</label>
+                <input class="caixa_input" type="number" name="gorduraTrans" id="gorduraTrans" placeholder="0">
+                <label for="item-cadastro">Fibras Alimentares (g)</label>
+                <input class="caixa_input" type="number" name="fibras" id="fibras" placeholder="10">
+                <label for="item-cadastro">Fibras Soluveis (g)</label>
+                <input class="caixa_input" type="number" name="fibrasSoluveis" id="fibrasSoluveis" placeholder="1">
+                <label for="item-cadastro">Sódio (mg)</label>
+                <input class="caixa_input" type="number" name="sodio" id="sodio" placeholder="200">
+                <label for="item-cadastro">Ácidos Orgânicos</label>
+                <input class="caixa_input" type="number" name="acidosOrganicos" id="acidosOrganicos" placeholder="0">
+            </div>
+            <input class="caixa_input" type="button" onclick="enviarDados()" value="Cadastrar" id="btn_cadastrar">           
+            
+        </form>
+
+    </div>
+    <script src="../App/main.js"></script>    
+</body>
+<footer>
+    <img src="../img/logo.png">
+    <p class="copyright">&copy; Copyright Qualimento - 2022</p>
+</footer>
+</html>
