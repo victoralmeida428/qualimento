@@ -10,18 +10,25 @@
     <link rel="stylesheet" href="..\CSS\style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
-    <header>
-        <h1>Qualimento</h1>
-        <div class="menu">
-            <ul class="menu-inicial">
-                <li class="navmenu"><a href="index.html">Home</a></li>
-                <li class="navmenu"><a href="cadastro.html">Cadastro</a></li>
-                <li class="navmenu"><a href="tabela.html">Informação Nutricional</a></li>
-            </ul>
-        </div>
+    <header class="header">
+        <h1 class="nome">Qualimento</h1>
+        <nav class="nav">
+            <button class="btnMenu" aria-label="Abrir menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                <span class="material-symbols-outlined">
+                    menu
+                    </span></button>   
+                <div class="menu" id="menu" role="menu">
+                    <ul class="menu-inicial">
+                        <li class="navmenu"><a href="index.html">Home</a></li>
+                        <li class="navmenu"><a href="cadastro.html">Cadastro</a></li>
+                        <li class="navmenu"><a href="tabela.html">Informação Nutricional</a></li>
+                    </ul>
+                </div>         
+        </nav>               
     </header>
     <div class="principal">
         <form action="../App/main.js" class="cadastro" method="post">
