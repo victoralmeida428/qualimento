@@ -49,15 +49,16 @@ p {
 
 .formulario {
     display: grid;
-    grid-template-columns: 7em auto 7em auto;
+    grid-template-columns: 8em 10em 8em 10em;
     color: aliceblue;
     align-items: center;
     text-align: right;
     row-gap: 1em;
     width: auto;
     column-gap: 1em;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 2em;
 
 }
 
@@ -82,7 +83,7 @@ label {
     transition: 400ms;
     border-radius: 30px;
     margin-bottom: 5em;
-    margin-top: 2em;
+    margin-top: 2.5em;
 
     
 }
@@ -92,7 +93,7 @@ label {
 }
 
 footer {
-    background: linear-gradient(#1A2D3B, #5F9EA0);
+    background: linear-gradient(#1a2d3b, #395e5f);
     /*background: #5F9EA0;*/
     text-align: center;
     padding: 40px 0;
