@@ -1,23 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 :root{
-    --font-family: 'Satisfy', sans-serif;
+    --font-family: 'Poppins', sans-serif;
     --bg-color: #1a2d3b;
-
+    font-size:16px;
     --prymary-color: white;
 
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     background-color: var(--bg-color);
 }
 
-header {
+.header {
     font-family: var(--font-family);
     color: var(--prymary-color);
-    font-size: 5em;
-    text-align: center;
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
     margin-top: 0px;
     padding-top: 1px;
+}
+
+.nome {
+    font-size: 3rem;
+    font-weight: bold;
+
+}
+
+.menu-inicial {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.menu-inicial a {
+    display: block;
+    padding: 1rem;
+}
+
+.btnMenu {
+    display: none;
 }
 
 h2 {
@@ -25,6 +53,7 @@ h2 {
     font-weight: bold;
     font-family: sans-serif;
     margin: 1em;
+    text-align: center;
 }
 
 p {
@@ -34,14 +63,7 @@ p {
     margin: 0 10%;
     line-height: 1.5em;
     text-indent: 2em;
-}
-
-.menu ul li{
-    font-size: 25px;
-    display: inline-block;
-    padding-right: 4px;
-    cursor: pointer;
-}
+} 
 
 .principal {
     text-align: center;
@@ -93,7 +115,7 @@ label {
 }
 
 footer {
-    background: linear-gradient(#1a2d3b, #395e5f);
+    background: linear-gradient(var(--bg-color), #46797a);
     /*background: #5F9EA0;*/
     text-align: center;
     padding: 40px 0;
@@ -118,4 +140,44 @@ footer p {
     width: 100%;
 
 
+}
+
+@media only screen and (max-device-width: 900px){
+    .formulario {
+        display: grid;
+        grid-template-columns: auto auto;
+        color: aliceblue;
+        align-items: center;
+        text-align: right;
+        row-gap: 1em;
+        width: auto;
+        column-gap: 1em;
+        margin-left: 5%;
+        margin-right: 25%;
+        margin-top: 2em;
+    }
+    .menu-inicial{
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background: var(--bg-color);
+        height: calc(100vh - 4.6875rem);
+        visibility: hidden;
+        overflow-y: hidden;
+        transition: 0.5s;
+    }
+
+    .active{
+
+        height: calc(100vh - 4.6875rem);
+        visibility: visible;
+        overflow-y: visible;
+        transition: 0.5s;
+    }
+
+    .btnMenu {
+        display: flex;
+        align-items: flex-end;
+    }
 }
